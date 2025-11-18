@@ -1,0 +1,6 @@
+src
+types
+tsconfig.json
+*.log
+*.lock
+.vscode

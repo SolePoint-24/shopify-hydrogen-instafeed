@@ -1,0 +1,47 @@
+{
+  "name": "shopify-hydrogen-instafeed",
+  "version": "1.0.0",
+  "description": "A lightweight React component to embed Instagram feeds in Shopify Hydrogen storefronts.",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "release:patch": "bash ./scripts/release.sh patch",
+    "release:minor": "bash ./scripts/release.sh minor",
+    "release:major": "bash ./scripts/release.sh major",
+    "publish:npm": "npm publish --access public"
+  },
+  "keywords": [
+    "shopify",
+    "hydrogen",
+    "react",
+    "instagram",
+    "instafeed",
+    "social-media",
+    "feed",
+    "remix"
+  ],
+  "author": "Solepoint Tech Solution",
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.5.1",
+    "@types/node": "^24.0.14",
+    "@types/react": "^18.0.0",
+    "prettier": "^3.6.2",
+    "typescript": "^5.8.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SolePoint-24/shopify-hydrogen-form-embed.git"
+  },
+  "homepage": "https://github.com/SolePoint-24/shopify-hydrogen-form-embed",
+  "bugs": {
+    "url": "https://github.com/SolePoint-24/shopify-hydrogen-form-embed/issues"
+  },
+  "sideEffects": false
+}
