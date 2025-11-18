@@ -5,11 +5,9 @@ export interface InstafeedProps {
   /** The full URL of the Instafeed script */
   scriptSrc: string;
   /** The nonce string for CSP compliance */
-  nonce?: string;
+  nonce: string;
   /** CSS classes for the feed container */
   className?: string;
-  /** ID for the feed container div (default: 'insta-feed') */
-  containerId?: string;
   /** Optional style object */
   style?: React.CSSProperties;
 }
@@ -18,22 +16,13 @@ export const Instafeed: React.FC<InstafeedProps> = ({
   scriptSrc,
   nonce,
   className,
-  containerId = 'insta-feed',
-  style
+  style,
 }) => {
-  
   // Invoke logic hook
   useInstafeed({
     scriptSrc,
     nonce,
-    containerId
   });
 
-  return (
-    <div 
-      id={containerId} 
-      className={className} 
-      style={style}
-    />
-  );
+  return <div id="insta-feed" className={className} style={style} />;
 };

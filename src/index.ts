@@ -1,4 +1,4 @@
 export {
-  useInstafeed,
-  type UseInstafeedOptions,
-} from '../src/components/instaFeed/hooks/useInstafeed';
+  Instafeed,
+  type InstafeedProps,
+} from './components/instaFeed/Instafeed';

@@ -24,7 +24,7 @@ export function useLazyScriptLoad(src: string, opts: Options = {}) {
     setStatus('loading');
 
     promiseRef.current = new Promise((resolve, reject) => {
-      // Check if script already exists
+      // reuse existing <script> if present
       let script = document.querySelector<HTMLScriptElement>(
         `script[src="${src}"]`,
       );
