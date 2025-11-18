@@ -1,6 +1,6 @@
 {
   "name": "shopify-hydrogen-instafeed",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "A lightweight React component to embed Instagram feeds in Shopify Hydrogen storefronts.",
   "main": "dist/index.js",
   "module": "dist/index.js",
